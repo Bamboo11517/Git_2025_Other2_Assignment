@@ -6,5 +6,20 @@
 	</head>
 	<body>
 		<script src="Quiz.js"></script>
+		<div class="question-box">
+			<p>
+				システム開発の早い段階で、目に見える形で利用者の要求が確認できるように確認用のソフトウェアを作成する<br>
+				ソフトウェア開発モデルとして、最も適切なものはどれか。
+			</p>
+			<form>
+				<label><input type="radio" name="quiz" value="アジャイル"> アジャイル</label><br>
+				<label><input type="radio" name="quiz" value="ウォーターフォール"> ウォーターフォール</label><br>
+				<label><input type="radio" name="quiz" value="スパイラル" checked> スパイラル</label><br>
+				<label><input type="radio" name="quiz" value="プロトタイピング"> プロトタイピング</label><br><br>
+				
+				<button type="button" onclick="checkAnswer()">解答する</button>
+			</form>
+			<p id="result"></p>
+		</div>
 	</body>
 </html>
